@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        thead {
+            background-color: #F2F2F2;
+        }
+        .form-container {
+            margin-bottom: 20px;
+        }
+        .form-container input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <div class="form-container">
+        <h2>Thêm Sách</h2>
+        <input type="text" id="bookId" placeholder="ID Sách">
+        <input type="text" id="bookName" placeholder="Tên Sách">
+        <input type="number" id="bookPrintYear" placeholder="Năm Xuất Bản">
+        <input type="number" id="countOfBook" placeholder="Số Lượng">
+        <button onclick="addBook()">Thêm Sách</button>
+        <button onclick="borrowBook()">Mượn Sách</button>
+        <br><br>
+    </div>
+    <table id="bookTable">
+        <thead>
+        <tr>
+            <th>ID Sách</th>
+            <th>Tên Sách</th>
+            <th>Năm Xuất Bản</th>
+            <th>Số Lượng</th>
+            <th>Tình Trạng</th>
+        </tr>
+        </thead>
+        <tbody id="bookTableBody">
+        </tbody>
+    </table>
+</table>
+<script src="Book.js"></script>
+<script src="my3.js"></script>
+
+<!--<script src="js/main.js"></script>-->
+</body>
+</html>
